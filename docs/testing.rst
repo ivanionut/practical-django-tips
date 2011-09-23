@@ -5,3 +5,11 @@
 ===================
 Testing e Debugging
 ===================
+
+TODO
+
+Riferimenti
+===========
+
++ `doctest`_
++ `unittest`_

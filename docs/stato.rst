@@ -1,6 +1,6 @@
 .. -*- coding: utf-8 -*-
 
-.. _stato-index
+.. _stato-index:
 
 Stato di Django
 ===============

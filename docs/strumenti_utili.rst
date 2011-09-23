@@ -15,6 +15,7 @@ ricadrebbe anche nella categoria degli strumenti sistemistici o di
 rilascio).
 
 + Un buon editor
++ Un buon browser
 + VirtualBox
 + werkzeug
 + IPython

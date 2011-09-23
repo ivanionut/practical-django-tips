@@ -1,101 +1,169 @@
 .. -*- coding: utf-8 -*-
 
+.. _best_practice-index:
+
 =============
 Best Practice
 =============
+
+.. _best_practice-giants:
 
 Salire sulle spalle dei giganti
 ===============================
 
 Non reinventare la ruota!
 -------------------------
-+ Passare una giornata a cercare e provare applicazioni esistenti alla
+* Passare una giornata a cercare e provare applicazioni esistenti alla
   caccia dell'applicazione già pronta, non è tempo perso, anche se voi
   avreste scritto la "stessa" applicazione in meno tempo.
   
-+ Il tempo risparmiato lo passerete a piangere sui vostri bug, che
+* Il tempo risparmiato lo passerete a piangere sui vostri bug, che
   sicuramente ognuno di noi commette.
   
-+ Se, per qualche motivo, non potete utilizzare applicazioni già
+* Se, per qualche motivo, non potete utilizzare applicazioni già
   esistenti, allora, compatibilmente con la licenza, derivate la
-  vostra applicazione da applicazioni esistenti.
+  vostra applicazione a partire dal codice di applicazioni esistenti
+  (`github`_ e `bitbucket`_, ma in generale `git`_ e `hg`_ facilitano
+  molto questa pratica tramite il branching).
 
 Leggere il codice di Django
 ---------------------------
-+ Il codice scritto dagli sviluppatori Django è la massima espressione
+* Il codice scritto dagli sviluppatori Django è la massima espressione
   delle best practice di programmazione.
   
-+ Leggetelo, sfogliatelo, traetene spunto, copiatene i pattern.
+* Leggetelo, sfogliatelo, traetene spunto, copiatene i pattern.
 
+.. _best_practice-workflow:
+
+Stabilire e seguire un workflow di lavoro
+=========================================
+* Ottimo esempio di workflow semplice dal `team Pocoo
+  <http://www.pocoo.org/internal/release-management/>`_.
+
+.. _best_practice-doc:
 
 Scrievere buona documentazione (e subito!)
 ==========================================
+* Documentare sempre il codice.
+* Non procrastinare la scrittura della documentazione.
+* Seguire lo `stile ufficiale
+  <https://docs.djangoproject.com/en/1.3/internals/contributing/#documentation-style>`_
 
-+ Documentare sempre il codice
-  
-+ Seguire lo `stile ufficiale <https://docs.djangoproject.com/en/1.3/internals/contributing/#documentation-style>`_
+* Includere sempre un file README con almeno due righe che spieghino
+  brevemente cosa fa un modulo o un'applicazione
+* Usare `Sphinx <http://sphinx.pocoo.org/>`_ (produce PDF, LaTeX,
+  HTML)
 
-+ Includere sempre un ``README.rst`` con almeno due righe che
-  spieghino brevemente cosa fa un modulo o un'applicazione
-
-+ Usare `Sphinx <http://sphinx.pocoo.org/>`_ (produce PDF, LaTeX, HTML)
-
-  + Fare riferimento al codice con `autodoc
+  * Fare riferimento al codice con `autodoc
     <http://sphinx.pocoo.org/tutorial.html#autodoc>`_
 
-+ Al limite, scrivere la documentazione *prima* di implementare il codice
+* Al limite, scrivere la documentazione *prima* di implementare il codice
 
-  + se un progetto fallisce, costa molto meno cestinare la
+  * se un progetto fallisce, costa molto meno cestinare la
     documentazione piuttosto che il costoso codice, anche se non
-    documentato
+    documentato.
 
-+ `Buoni esempi di documentazione
+* `Buoni esempi di documentazione
   <http://sphinx.pocoo.org/examples.html#books-produced-using-sphinx>`_
 
-Diversi approcci per diversi problemi
-=====================================
-+ Database transazionali solo per dati manipolati in operazioni
-  transazionali
+.. _best_practice-test:
 
-  - solo per operazioni *davvero* transazionali
-  - sono poche le porzioni davvero transazionali in un'applicazione web odierna
+Scrivere i test
+===============
+* Usate almeno `pylint <http://pypi.python.org/pypi/pylint>`_ per una
+  verifica blanda del codice.
+* Durante o addirittura *prima* di scrivere il codice.
+* Sfruttare `doctest`_ per integrare test e documentazione.
 
-+ Database non transazionali (key-value store, document store) per
-  dati storici (e.g., log)
+.. seealso::
+   :ref:`testing-index`
 
-  - la velocità è più importante della consistenza
-  - dati fortemente denormalizzati, disponibili subito
+.. _best_practice-reusable:
 
-+ Task sincroni
+Create applicazioni piccole e riusabili
+=======================================
 
-  - solo se brevi
-  - non devono "rompere" il ciclo "request-response"
+.. _best_prctice-distribute:
 
-+ Task asincroni
-  - da usarsi per operazioni di durata imprecisata
+Create applicazioni e distribuitele
+===================================
 
+.. seealso::
+   :ref:`applicazioni_riusabili-index`
 
-Applicazioni piccole e riusabili
-================================
-Filosofia Unix.
+.. _best_practice-incremental-features:
 
 Aggiungere piccole feature incrementalmente
--------------------------------------------
+===========================================
+* Non aggiungere una feature ad una vostra applicazione se la feature
+  non è di stretta pertinenza.
+
+* Nel dubbio, create una nuova applicazione: è meglio avere due
+  applicazioni piccole (e per questo più semplici da debuggare) con
+  una feature ciascuna, piuttosto che una sola applicazione con una
+  feature "fuori posto".
+
+Applicazioni portabili
+======================
+* Usare feature di Django solo se non deprecate.
+* Tenersi informati sulle prossime release di Django per sapere quali
+  cambiamenti verranno introdotti.
 
 Fixture (dati predefiniti)
 ==========================
+* Non appena avete popolato le vostre applicazioni e vi sono dati a
+  sufficienza per fare una demo, salvate i dati in una o più fixture.
+* Separare le fixture per applicazione.
+* Le fixture sono utilissime per i test.
 
-Strutturare i template
-======================
 
-Coding style
-============
+Usare meccanismi di caching
+===========================
+* Imparare come funzionano i vari livelli di caching previsti da
+  `Django`_ prima di mettervi alla rincorsa del mecchanismo di caching
+  capace di a battere `memcached`_ e simili.
+* Non mettere tutto in cache.
 
-+ Seguire quanto più possibile la `Style Guide for Python Code (guida
+
+Seuire uno stile di codice consistente
+======================================
+* Seguire quanto più possibile la `Style Guide for Python Code (guida
   di stile per il codice Python)
-  <http://www.python.org/dev/peps/pep-0008/>`__.
-  
-+ Seguire quanto più possibile il `Coding Style
-  <https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/coding-style/>`__
+  <http://www.python.org/dev/peps/pep-0008/>`_.
+* Seguire quanto più possibile il `Coding Style
+  <https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/coding-style/>`_
   di Django, anche se non avete in programma di includere il vostro
   codice in Django.
+
+.. _best_practice-approaches:
+
+Seguire diversi approcci per diversi problemi
+=============================================
+
+Dati e database
+---------------
+* Database transazionali solo per dati manipolati in operazioni
+  transazionali
+
+  * solo per operazioni *davvero* transazionali
+  * sono poche le porzioni davvero transazionali in un'applicazione
+    web odierna
+
+
+* Database non transazionali (key-value store, document store) per
+  dati storici (e.g., log)
+
+  * la velocità è più importante della consistenza
+  * dati fortemente denormalizzati, disponibili subito
+
+Funzioni
+--------
+* Task inerentemente sincroni
+
+  * implementateli solo se di durata breve e nota
+  * non devono "rompere" il ciclo "request-response"
+
+* Task asincroni
+  
+  * da usarsi per operazioni di durata imprecisata
+

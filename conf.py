@@ -91,7 +91,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'default'
+html_theme = 'flask'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -99,7 +99,7 @@ html_theme = 'default'
 #html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
+html_theme_path = ['_themes/flask-sphinx-themes']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -214,3 +214,16 @@ man_pages = [
     ('index', 'consiglipraticipersvilupparecondjango', u'Consigli Pratici per Sviluppare con Django Documentation',
      [u'Federico Maggi'], 1)
 ]
+
+rst_epilog = """
+.. _Django: http://www.djangoproject.org/
+.. _github: http://github.com/
+.. _git: http://git-scm.com/
+.. _hg: http://mercurial.selenic.com/
+.. _Mercurial: http://mercurial.selenic.com/
+.. _bitbucket: http://bitbucket.org/
+.. _doctest: http://docs.python.org/library/doctest.html
+.. _unittest: http://docs.python.org/library/unittest.html
+.. _memcached: http://memcached.org/
+.. _PyPi: http://pypi.python.org/
+"""
