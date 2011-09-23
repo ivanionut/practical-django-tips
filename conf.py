@@ -13,6 +13,55 @@
 
 import sys, os
 
+global_links = """
+.. generic links
+.. _Django: http://www.djangoproject.org/
+.. _Django tutorial: https://docs.djangoproject.com/en/dev/intro/tutorial01/
+.. _Python: http://python.org/
+.. _IPython: http://ipython.org/
+.. _github: http://github.com/
+.. _git: http://git-scm.com/
+.. _hg: http://mercurial.selenic.com/
+.. _Mercurial: http://mercurial.selenic.com/
+.. _bitbucket: http://bitbucket.org/
+.. _doctest: http://docs.python.org/library/doctest.html
+.. _unittest: http://docs.python.org/library/unittest.html
+.. _memcached: http://memcached.org/
+.. _PyPi: http://pypi.python.org/
+.. _Advanced Django: http://www.slideshare.net/simon/advanced-django
+.. _fixtures: https://docs.djangoproject.com/en/1.3/howto/initial-data/
+
+.. useful apps
+.. _django-extensions: https://github.com/django-extensions/django-extensions
+.. _django-devserver: 
+.. _django-debug-toolbar: 
+.. _django-admin-tools: 
+.. _django-debug-logging: 
+.. _django-sentry: 
+.. _django-uni-form: 
+.. _django-templatetag-sugar: 
+.. _django-template-utils: 
+.. _django-paging: 
+.. _django-floppyform: 
+.. _django-form-utils: 
+.. _django-richtemplates: 
+.. _django-filebrowser: 
+.. _django-varnish: 
+.. _django-memcached: 
+.. _django-tyrant-cache: 
+.. _django-grappelli: 
+.. _diango-nexus: 
+.. _django-rosetta: 
+.. _django-registration: 
+.. _django-profiles: 
+.. _django-gargoyle: 
+.. _django-mediasync: 
+.. _django-celery: 
+.. _django-taggit: 
+.. _django-chunks: 
+.. _django-admin-tools:
+"""
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -216,14 +265,4 @@ man_pages = [
 ]
 
 rst_epilog = """
-.. _Django: http://www.djangoproject.org/
-.. _github: http://github.com/
-.. _git: http://git-scm.com/
-.. _hg: http://mercurial.selenic.com/
-.. _Mercurial: http://mercurial.selenic.com/
-.. _bitbucket: http://bitbucket.org/
-.. _doctest: http://docs.python.org/library/doctest.html
-.. _unittest: http://docs.python.org/library/unittest.html
-.. _memcached: http://memcached.org/
-.. _PyPi: http://pypi.python.org/
-"""
+""" + global_links
