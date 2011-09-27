@@ -3,7 +3,7 @@
 Errori Comuni
 =============
 
-Tratti da `Django Worst Practices <http://www.slideshare.net/pydanny/django-worst-practices>`_.
+Tratti da `Django Worst Practices <http://www.slideshare.net/pydanny/django-worst-practices>`_ (approfondimento: `http://www.slideshare.net/pydanny/python-worst-practices`_)
 
 Tendenza al "fai da te"
 -----------------------
