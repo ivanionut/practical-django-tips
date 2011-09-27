@@ -6,6 +6,10 @@
 Consigli Pratici per Sviluppare con Django
 ==========================================
 
+.. note:: Questo documento è basato su `Django`_ `versione 1.3
+   <https://docs.djangoproject.com/en/1.3/>`_, salvo diversamente
+   indicato.
+
 Questo documento contiene dei consigli semplici, basati sulla mia
 esperienza, per sviluppare applicazioni web con `Django`_. Ho prodotto
 questo documento preparando un corso aziendale della durata di due

@@ -122,7 +122,16 @@ Usare meccanismi di caching
 * Imparare come funzionano i vari livelli di caching previsti da
   `Django`_ prima di mettervi alla rincorsa del mecchanismo di caching
   capace di a battere `memcached`_ e simili.
-* Non mettere tutto in cache.
+* Non mettere tutto in cache, usare la cache accuratamente.
+* Pensare agli utenti autenticati e a quelli autenticati e progettare
+  la politica di caching di conseguenza.
+
+
+.. _best_practice-split-setting:
+
+Separate i setting per compartimenti
+====================================
+* https://code.djangoproject.com/wiki/SplitSettings
 
 
 Seuire uno stile di codice consistente

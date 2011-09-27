@@ -24,9 +24,9 @@ Database
 
 Sviluppo
 ========
-* django-devserver
-* django-debug-toolbar
-* django-extensions
+* `django-devserver`_
+* `django-debug-toolbar`_
+* `django-extensions`_
   
 .. seealso:: `developer-tools
    <http://djangopackages.com/grids/g/developer-tools/>`_ su `Django
@@ -35,26 +35,25 @@ Sviluppo
 
 Debugging
 =========
-* django-debug-toolbar
-* django-debug-logging
-* django-sentry
-* django-extensions
+* `django-debug-logging`_
+* `django-sentry`_
+* `django-extensions`_
 
 
 Templating
 ==========
-* django-uni-form
-* django-templatetag-sugar
-* django-template-utils
-* django-paging
-* django-floppyform
-* django-form-utils
-* django-richtemplates
+* `django-uni-form`_
+* `django-templatetag-sugar`_
+* `django-template-utils`_
+* `django-paging`_
+* `django-floppyform`_
+* `django-form-utils`_
+* `django-richtemplates`_
 
 
 Assets
 ======
-* django-filebrowser
+* `django-filebrowser`_
 
   .. seealso:: `asset-managers
      <http://djangopackages.com/grids/g/asset-managers/>`_ su `Django
@@ -62,9 +61,9 @@ Assets
 
 Caching
 =======
-* django-varnish
-* django-memcached (statistiche di utilizzo di `memcached`_)
-* django-tyrant-cache
+* `django-varnish`_
+* `django-memcached`_ (statistiche di utilizzo di `memcached`_)
+* `django-tyrant-cache`_
 
 .. seealso:: `caching <http://djangopackages.com/grids/g/caching/>`_
    su `Django Packages`_
@@ -72,8 +71,9 @@ Caching
 
 Admin
 =====
-* django-grappelli
-* diango-nexus
+* `django-grappelli`_
+* `diango-nexus`_
+* `django-admin-tools`_
 
 .. seealso:: `admin-interface
    <http://djangopackages.com/grids/g/admin-interface/>`_ su `Django
@@ -82,13 +82,13 @@ Admin
 
 Translation
 ===========
-* django-rosetta
+* `django-rosetta`_
 
 
 Users
 =====
-* django-registration
-* django-profiles
+* `django-registration`_
+* `django-profiles`_
 
 .. seealso:: `profiles
    <http://djangopackages.com/grids/g/profiles/>`_ su `Django
@@ -96,8 +96,8 @@ Users
 
 Deployment
 ==========
-* django-gargoyle
-* django-mediasync
+* `django-gargoyle`_
+* `django-mediasync`_
 
 .. seealso:: `deployment
    <http://djangopackages.com/grids/g/deployment/>`_ su `Django
@@ -105,9 +105,9 @@ Deployment
 
 Miscellanea
 ===========
-* django-celery
-* django-taggit
-* django-chunks
+* `django-celery`_
+* `django-taggit`_
+* `django-chunks`_
 
 .. _applicazioni_utili-lists:
   
