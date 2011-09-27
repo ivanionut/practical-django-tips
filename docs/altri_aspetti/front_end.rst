@@ -49,21 +49,39 @@ Framework CSS consigliati
 -------------------------
 Come detto sopra, non sono necessarimente i migliori.
 
+`Twitter Bootstrap`_
+
+  Per chi proprio non riesce ad aspettare e vuole **tutto** pronto
+  all'uso, JavaScript incluso, in stile `Twitter
+  <http://twitter.com/>`_.
+
 `Less`_
-  Framework minimalistico ma decisamente flessibile, utile per la funzionalità che permette l'adattamento in maniera trasparente alle diverse dimensioni di schermo (e.g., portatile, palmare, tablet).
+
+  Framework minimalistico ma decisamente flessibile, utile per la
+  funzionalità che permette l'adattamento in maniera trasparente alle
+  diverse dimensioni di schermo (e.g., portatile, palmare, tablet).
   
 `Blueprint CSS`_
+
   Utile come primo framework e per progetti di media entità.
 
 `compass`_
-  Utile per superare i limiti della sintassi CSS (e.g., aggiungendo dichiarazioni di variabili, funzioni). Integrabile in Django via `django-compass`_.
+
+  Utile per superare i limiti della sintassi CSS (e.g., aggiungendo
+  dichiarazioni di variabili, funzioni). Integrabile in Django via
+  `django-compass`_.
 
 `Susy`_
-  Utile estensione di `compass`_ per la creazione e gestione di griglie.
+
+  Utile estensione di `compass`_ per la creazione e gestione di
+  griglie.
 
 Framework JavaScript consigliati
 --------------------------------
-Come detto sopra, non sono necessarimente i migliori. Da un certo punto di vista, questa lista è ordinata dalla libreria più "leggera" a quella più omnicomprensiva.
+
+Come detto sopra, non sono necessarimente i migliori. Da un certo
+punto di vista, questa lista è ordinata dalla libreria più "leggera" a
+quella più omnicomprensiva.
 
 `mootools`_
   Libreria di astrazione ed effetti grafici.
@@ -77,37 +95,44 @@ Come detto sopra, non sono necessarimente i migliori. Da un certo punto di vista
 
 Django, aiutami tu!
 -------------------
-Django non mette a disposizione nulla che guidi il designer nella scrittura dei template, nemmeno delle linee guida. L'unica funzionalità pensata per un web designer si limita a `django.contrib.webdesign <https://docs.djangoproject.com/en/dev/ref/contrib/webdesign/>`_ che offre il solo tempate tag `{% lorem %}` utile a generare testo dummy riempitivo.
+
+`Django`_ non mette a disposizione nulla che guidi il designer nella
+scrittura dei template, nemmeno delle linee guida. L'unica
+funzionalità pensata per un web designer si limita a
+`django.contrib.webdesign
+<https://docs.djangoproject.com/en/dev/ref/contrib/webdesign/>`_ che
+offre il solo tempate tag `{% lorem %}` utile a generare testo dummy
+riempitivo.
 
 Fortunatamente esistono applicazioni utili:
 
-+ django-richtemplates
-+ django-uni-forms
-+ django-template-utils
+* `django-richtemplates`_
+* `django-uni-forms`_
+* `django-template-utils`_
 
 Riferimenti
 ===========
 
-+ `Best Practices for Front-End Django Developers
+* `Best Practices for Front-End Django Developers
   <http://www.slideshare.net/cosecant/best-practices-for-frontend-django-developers>`_
 
-+ `web-developer's handbook`_
+* `web-developer's handbook`_
 
-+ `Google Web Fonts <http://www.google.com/webfonts#ChoosePlace:select>`_
+* `Google Web Fonts <http://www.google.com/webfonts#ChoosePlace:select>`_
 
-+ `Lista di librerie e framwework per il web <http://www.w3avenue.com/topics/libraries-frameworks/>`_
+* `Lista di librerie e framwework per il web <http://www.w3avenue.com/topics/libraries-frameworks/>`_
 
-+ `Font squirrel`_
+* `Font squirrel`_
 
-+ `Advanced Django Form Usage
+* `Advanced Django Form Usage
   <http://www.slideshare.net/pydanny/advanced-django-forms-usage>`_
   (`Video della presentazione
   <http://blip.tv/djangocon/advanced-django-form-usage-5573287>`_ a
   `DjangoCon.us 2011 <http://djangocon.us/>`_)
 
-+ `Microformats <http://microformats.org/>`_
+* `Microformats <http://microformats.org/>`_
 
-+ `Separation: The Web Designer's Dilemma
+* `Separation: The Web Designer's Dilemma
   <http://www.alistapart.com/articles/separationdilemma/>`_
 
 

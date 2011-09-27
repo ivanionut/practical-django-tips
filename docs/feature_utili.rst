@@ -100,11 +100,15 @@ Setting utili
 Manager
 =======
 
-Class-based View
-================
-
 Context Processor
 =================
+
+Database Multipli
+=================
+https://docs.djangoproject.com/en/1.3/topics/db/multi-db/
+
+Class-based View
+================
 
 Template Tag
 ============

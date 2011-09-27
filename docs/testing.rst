@@ -22,11 +22,17 @@ Testing
 Cosa evitare
 ------------
 * Anche se la deadline è vicina, non procrastinate la scrittura dei
+=======
+* Ove possibile, misurare la copertura del codice "esercitato" dai vostri test (http://ericholscher.com/blog/2009/nov/13/django-testing-code-coverage/)
+
+Cosa evitare
+------------
+* Anche se la deadline è vicina, evitare di procrastinate la scrittura dei
   test dicendo "lo farò più tardi". Ve ne pentirete!
 
 Riferimenti
 ===========
-
+* http://pycheesecake.org/wiki/PythonTestingToolsTaxonomy
 * `Advanced Django`_
 * `doctest`_
 * `unittest`_

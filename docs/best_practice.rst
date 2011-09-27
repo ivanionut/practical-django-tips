@@ -70,8 +70,8 @@ Scrievere buona documentazione (e subito!)
 
 Scrivere i test
 ===============
-* Usate almeno `pylint <http://pypi.python.org/pypi/pylint>`_ per una
-  verifica blanda del codice.
+* Usate almeno `pylint <http://pypi.python.org/pypi/pylint>`_ e/o `pyflakes <http://pypi.python.org/pypi/pyflakes>`_ per una
+  verifica blanda della "qualità" del codice.
 * Durante o addirittura *prima* di scrivere il codice.
 * Sfruttare `doctest`_ per integrare test e documentazione.
 
@@ -159,11 +159,12 @@ Dati e database
     web odierna
 
 
-* Database non transazionali (key-value store, document store) per
+* Database non transazionali/relazionali (key-value store, document store) per
   dati storici (e.g., log)
 
   * la velocità è più importante della consistenza
   * dati fortemente denormalizzati, disponibili subito
+  * `ottima comparazione <http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis>`_
 
 Funzioni
 --------
