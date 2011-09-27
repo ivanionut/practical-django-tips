@@ -18,6 +18,7 @@ Testing
   disposizione.
 * Cominciate dai `doctest`_: sono facili da inserire e aiutano a
   documentare mentre si scrive un test.
+* Ove possibile, misurare la copertura del codice "esercitato" dai vostri test (http://ericholscher.com/blog/2009/nov/13/django-testing-code-coverage/)
 
 Cosa evitare
 ------------
