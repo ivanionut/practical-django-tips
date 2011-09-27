@@ -21,12 +21,13 @@ Testing
 
 Cosa evitare
 ------------
-* Anche se la deadline è vicina, non procrastinate la scrittura dei
+* Anche se la deadline è vicina, evitare di procrastinate la scrittura dei
   test dicendo "lo farò più tardi". Ve ne pentirete!
 
 Riferimenti
 ===========
 
+* http://pycheesecake.org/wiki/PythonTestingToolsTaxonomy
 * `Advanced Django`_
 * `doctest`_
 * `unittest`_
