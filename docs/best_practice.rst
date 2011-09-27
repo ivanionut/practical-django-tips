@@ -70,8 +70,8 @@ Scrievere buona documentazione (e subito!)
 
 Scrivere i test
 ===============
-* Usate almeno `pylint <http://pypi.python.org/pypi/pylint>`_ per una
-  verifica blanda del codice.
+* Usate almeno `pylint <http://pypi.python.org/pypi/pylint>`_ e/o `pyflakes <http://pypi.python.org/pypi/pyflakes>`_ per una
+  verifica blanda della "qualità" del codice.
 * Durante o addirittura *prima* di scrivere il codice.
 * Sfruttare `doctest`_ per integrare test e documentazione.
 
