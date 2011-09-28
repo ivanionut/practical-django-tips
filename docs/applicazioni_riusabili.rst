@@ -12,9 +12,41 @@ TODO
   appropriati e che richiedano poco o nessuno sforzo all'utente dopo
   l'installazione.
 
-  .. seealso:: http://djangopatterns.com
+.. code-block:: python
+
+   # django-myapp/myapp/settings.py
+
+   from django.conf import settings
+   from django.db.models import get_model
+
+   # SENZA_NAMESPACE = getattr(settings, 'CON_NAMESPACE', 'default')
+   PICTURE_WIDTH = getattr(settings, 'MYAPP_PICTURE_WIDTH', 128)
+   CACHE_TTL_SECONDS = getattr(settings, 'MYAPP_CACHE_TIMEOUT_SECONDS', 3600)
+   USER_MODEL_NAME = getattr(settings, 'MYAPP_USER_MODEL', 'auth.User')
+
+   # controllo setting (esempio)
+   USER_MODEL = get_model(*USER_MODEL_NAME.split('.'))
+
+   if not USER_MODEL:
+       raise ImproperlyConfigured('No model named %s found' % USER_MODEL_NAME)
+
+
+ .. code-block:: python
+   
+   # django-myapp/myapp/models.py
+
+   from django.conf import settings
+
+   class MyModel(models.Model):
+       ...
+       author = models.ForeignKey(settings.USER_MODEL)
+
+  .. seealso:: `Configurable Foreign Keys
+               <http://djangopatterns.com/patterns/models/configurable_relations/>`_
 
   .. seealso:: https://github.com/glamkit
+
+  .. seealso:: `django-grappelli`_
 
 .. _applicazioni-app_based_settings:
 
@@ -138,16 +170,12 @@ abbia il seguente scheletro:
    │   └── wsgi/       # eventuali server WSGI
    └── setup.py        # script d'installazione
 
-
-* Usando uno scheletro ``django-site-skel`` il lavoro sarà più
-  facilmente ripetibile.
-
 .. _applicazioni-skel:
 
 Creare e aggiornare uno "scheletro" per applicazioni Django
 ===========================================================
 
-* ``django-app-skel``
+* https://github.com/callowayproject/django-app-skeleton
 * Usare `versiontools
   <http://packages.python.org/versiontools/usage.html#adding-support-for-your-project>`_
 

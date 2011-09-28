@@ -170,7 +170,51 @@ Usare meccanismi di caching
 
 Separate i setting per compartimenti
 ====================================
-* https://code.djangoproject.com/wiki/SplitSettings
+
+.. code-block:: bash
+
+   $ ls settings/
+
+   __init__.py
+   10-base.conf
+   20-database.conf
+   30-templates.conf
+   40-cache.conf
+   ...
+
+
+.. code-block:: python
+
+   # settings/__init__.py
+   
+   import os.path
+   import glob
+
+   conffiles = glob.glob(os.path.join(os.path.dirname(__file__), '*.conf'))
+   conffiles.sort()
+   for f in conffiles:
+       execfile(os.path.abspath(f))
+
+
+Setting di sviluppo e di deployment
+-----------------------------------
+
+.. code-block:: bash
+
+   $ ls settings/
+
+   __init__.py                   # aggiunto al repository
+   10-base.conf
+   11-base.machine.local.conf    # escluso dal repository (e.g., creato via
+                                 # Fabric o a mano durante il deployment)
+   30-templates.conf             # aggiunto al repository
+   40-cache.conf                 # aggiunto al repository
+   41-cache.machine.local.conf   # escluso dal repository
+   ...
+   70-registration.app.conf      # override dei setting per
+
+
+* https://code.djangoproject.com/wiki/SplitSettings#UsingalistofconffilesTransifex
 
 
 Seuire uno stile di codice consistente
