@@ -28,8 +28,9 @@ Non reinventare la ruota!
 
 Leggere il codice di Django
 ---------------------------
-* Il codice scritto dagli sviluppatori Django è la massima espressione
-  delle best practice di programmazione.
+* Il `codice scritto dagli sviluppatori Django
+  <http://code.djangoproject.org>`_ è la massima espressione delle
+  best practice di programmazione per applicazioni `Django`_.
   
 * Leggetelo, sfogliatelo, traetene spunto, copiatene i pattern.
 
@@ -80,8 +81,46 @@ Scrivere i test
 
 .. _best_practice-reusable:
 
-Create applicazioni piccole e riusabili
-=======================================
+Create applicazioni piccole e riusabili (principi)
+==================================================
+
+Ogni applicazione riusabile deve seguire i seguenti principi essenziali:
+
+**Focused**
+
+    Use case limitati; non includere nulla che non sia indispensabile.
+
+    .. epigraph::
+    
+       ``Write programs that do one thing and do it well.''
+       
+       -- Doug McIlroy (inventor of UNIX pipes)
+
+**Auto-contenuta**
+
+    Tutti i requisiti per far funzionare l'applicazione sono inclusi o
+    dichiarati.
+
+**Adattabile**
+
+    Non imporre troppe assunzioni (e.g., valori attesi in input,
+    setting cablati), cercando così di rendere l'applicazione facile
+    da personalizzare.
+
+**Facilmente installabile**
+
+    Se un'applicazione è difficile da installare si tenderà a non
+    sfruttarla o a preferirne un'altra. È bene invece che per
+    installare un'applicazione sia sufficiente quanto segue
+
+    .. code-block:: bash
+
+    (my-virtualenv) [user@host]$ pip install django-myapp
+
+    Idealmente, l'applicazione è a questo punto già pronta all'uso, la
+    procedura d'installazione fornisce istruzioni all'utente su come
+    procedere.
+    
 
 .. _best_prctice-distribute:
 
