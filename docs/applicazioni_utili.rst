@@ -35,9 +35,12 @@ Sviluppo
 
 Debugging
 =========
+* `django-preflight`_
 * `django-debug-logging`_
 * `django-sentry`_
 * `django-extensions`_
+* `django-reviewboard`_
+* `django-projector`_
 
 
 Templating
@@ -49,6 +52,7 @@ Templating
 * `django-floppyform`_
 * `django-form-utils`_
 * `django-richtemplates`_
+* `django-supergeneric`_
 
 
 Assets
@@ -74,6 +78,7 @@ Admin
 * `django-grappelli`_
 * `diango-nexus`_
 * `django-admin-tools`_
+* `django-jqgrid`_
 
 .. seealso:: `admin-interface
    <http://djangopackages.com/grids/g/admin-interface/>`_ su `Django
@@ -94,20 +99,29 @@ Users
    <http://djangopackages.com/grids/g/profiles/>`_ su `Django
    Packages`_
 
+
 Deployment
 ==========
 * `django-gargoyle`_
 * `django-mediasync`_
+* `fabric <http://www.slideshare.net/simon/advanced-aspects-of-the-django-ecosystem-haystack-celery-fabric>`_
 
 .. seealso:: `deployment
    <http://djangopackages.com/grids/g/deployment/>`_ su `Django
    Packages`_
 
+
 Miscellanea
 ===========
+* `django-piston`_
+* `django-rest-framework`_
+* `django-tastypie`_
 * `django-celery`_
 * `django-taggit`_
 * `django-chunks`_
+* `django-dynamicsites`_ (`Serving Multiple Sites
+  <http://blog.uysrc.com/2011/03/23/serving-multiple-sites-with-django/>`_)
+
 
 .. _applicazioni_utili-lists:
   
@@ -141,3 +155,5 @@ Una `ricerca su PyPi
 
   Idem. Con la differenza che su `PyPi` troverete codice che, sebbene
   open source, l'autore ha deciso di rilasciare "ufficialmente".
+
+.. include:: epilogue.rst

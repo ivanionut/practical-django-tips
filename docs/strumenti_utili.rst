@@ -14,20 +14,23 @@ ma è anche un ottimo strumento sistemistico di rilascio (quindi
 ricadrebbe anche nella categoria degli strumenti sistemistici o di
 rilascio).
 
-+ Un buon editor
-+ Un buon browser
-+ VirtualBox
-+ werkzeug
-+ IPython
-+ virtualenv
-+ pip
-+ github e bitbucket
-+ Read the Docs
-+ uwsgi
-+ munin
-+ Tornado
-+ gunicorn
-+ meinheld
-+ sqlite
-+ ab
-+ siege
+* Un buon editor
+* Un buon browser (`Google Chrome <http://www.google.com/chrome>`_, `Firefox <http://getfirefox.org>`_ + `FireBug <http://mozilla.org/firefox>`_)
+* `VirtualBox <http://virtualbox.org>`_
+* `werkzeug <http://werkzeug.pocoo.org/>`_
+* `IPython`_
+* `virtualenv <http://www.virtualenv.org/>`_
+* `pip <http://www.pip-installer.org/>`_
+* `github`_ e `bitbucket`_
+* `Read the Docs <http://readthedocs.org>`_
+* `uwsgi <http://projects.unbit.it/uwsgi/>`_
+* `munin <http://munin-monitoring.org/>`_
+* `Tornado <http://www.tornadoweb.org/>`_
+* `gunicorn <http://gunicorn.org/>`_
+* `meinheld <http://meinheld.org/>`_
+* `sqlite <http://www.sqlite.org/>`_
+* `ab <http://httpd.apache.org/docs/2.0/programs/ab.html>`_
+* `siege <http://www.joedog.org/index/siege-home>`_
+* `msgtools <http://lichota.net/~krzysiek/projects/msgtools/>`_
+
+.. include:: epilogue.rst

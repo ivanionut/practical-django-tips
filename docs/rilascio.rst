@@ -9,4 +9,7 @@ Rilascio.
 
 Riferimenti
 ===========
-+ `Hosting Python Web Applications <http://www.slideshare.net/GrahamDumpleton/pycon-au-2011-hosting-python-web-applications>`_
+* `Hosting Python Web Applications
+  <http://www.slideshare.net/GrahamDumpleton/pycon-au-2011-hosting-python-web-applications>`_
+
+.. include:: epilogue.rst

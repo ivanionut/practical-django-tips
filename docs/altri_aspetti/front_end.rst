@@ -107,7 +107,7 @@ riempitivo.
 Fortunatamente esistono applicazioni utili:
 
 * `django-richtemplates`_
-* `django-uni-forms`_
+* `django-uni-form`_
 * `django-template-utils`_
 
 Riferimenti
@@ -135,7 +135,7 @@ Riferimenti
 * `Separation: The Web Designer's Dilemma
   <http://www.alistapart.com/articles/separationdilemma/>`_
 
-
+.. _Twitter bootstrap: http://twitter.github.com/bootstrap/
 .. _Modernizr: http://www.modernizr.com/
 .. _jQuery: http://jquery.com/
 .. _jQuery UI: http://jqueryui.com/
@@ -151,3 +151,5 @@ Riferimenti
 .. _django-compass: https://bitbucket.org/zacharyvoase/django-compass
 .. _web-developer's handbook: http://alvit.de/handbook/
 .. _Font squirrel: http://www.fontsquirrel.com/
+
+.. include:: epilogue.rst

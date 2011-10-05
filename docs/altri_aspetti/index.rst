@@ -11,3 +11,5 @@ Altri aspetti
    :glob:
 
    *
+
+.. include:: epilogue.rst

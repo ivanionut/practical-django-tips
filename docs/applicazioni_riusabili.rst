@@ -6,11 +6,12 @@
 Applicazioni riusabili in Django
 ================================
 
-TODO
+Setting dedicati per ogni applicazione
+======================================
+Usare setting dedicati per ogni applicazione con valori di default
+appropriati e che richiedano poco o nessuno sforzo all'utente dopo
+l'installazione.
 
-* Usare setting dedicati per ogni applicazione con valori di default
-  appropriati e che richiedano poco o nessuno sforzo all'utente dopo
-  l'installazione.
 
 .. code-block:: python
 
@@ -31,22 +32,24 @@ TODO
        raise ImproperlyConfigured('No model named %s found' % USER_MODEL_NAME)
 
 
- .. code-block:: python
-   
+
+.. code-block:: python
+
    # django-myapp/myapp/models.py
 
-   from django.conf import settings
+   from myapp import settings
 
    class MyModel(models.Model):
        ...
        author = models.ForeignKey(settings.USER_MODEL)
 
-  .. seealso:: `Configurable Foreign Keys
+
+.. seealso:: `Configurable Foreign Keys
                <http://djangopatterns.com/patterns/models/configurable_relations/>`_
 
-  .. seealso:: https://github.com/glamkit
+.. seealso:: https://github.com/glamkit
 
-  .. seealso:: `django-grappelli`_
+.. seealso:: `django-grappelli`_
 
 .. _applicazioni-app_based_settings:
 
@@ -70,6 +73,7 @@ Di fatto, un progetto `Django`_ non ha bisogno di una directory in cui
 vivere. Servono soltanto due moduli `Python`_ all'interno del
 ``sys.path``:
 
+
 .. code-block:: python
 
    sampleproject.settings
@@ -79,6 +83,7 @@ E non serve altro! Il file ``manage.py`` è, di fatto, un rimpiazzo di
 ``django-admin.py`` con, in più, l'impostazione della variabile
 d'ambiente:
 
+
 .. code-block:: python
 
    os.environ[DJANGO_SETTINGS_MODULE] = 'sampleproject.settings'
@@ -87,11 +92,13 @@ Di fatto, nemmeno questo è necessario. È sufficiente infatti usare
 l'opzione ``--settings`` per specificare il modulo dei setting
 dinamicamente:
 
+
 .. code-block:: bash
 
    $ django-admin.py [comando] --settings 'sampleproject.settings'
 
 D'altra parte uno ha bisogno di altri ingredienti:
+
 
 **Applicazioni specifiche**
 
@@ -103,11 +110,13 @@ D'altra parte uno ha bisogno di altri ingredienti:
   Se proprio dovete includere un'applicazione specifica del vostro
   progetto, sorge il problema di dove piazzare queste applicazioni.
 
+
 **Template**
 
   Normalmente le buone applicazioni hanno già un set di template a
   corredo. Quindi, per esempio, se utilizzate `django-registration`_
   avrete:
+
 
   .. code-block:: bash
 
@@ -125,6 +134,7 @@ D'altra parte uno ha bisogno di altri ingredienti:
 
   Se non sono adatte al vostro progetto dovrete estenderle. Sorge
   quindi il problema di dove posizionzare questi template.
+
 
 **File statici**
 
@@ -179,4 +189,4 @@ Creare e aggiornare uno "scheletro" per applicazioni Django
 * Usare `versiontools
   <http://packages.python.org/versiontools/usage.html#adding-support-for-your-project>`_
 
-TODO
+.. include:: epilogue.rst

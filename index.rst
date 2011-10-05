@@ -50,3 +50,5 @@ presente è ispirato all'ottimo libro (in corso di preparazione) di
    docs/strumenti_utili
    docs/altri_aspetti/index
    docs/riferimenti
+
+.. include:: epilogue.rst

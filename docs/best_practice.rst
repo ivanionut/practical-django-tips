@@ -89,12 +89,13 @@ Ogni applicazione riusabile deve seguire i seguenti principi essenziali:
 **Focused**
 
     Use case limitati; non includere nulla che non sia indispensabile.
-
-    .. epigraph::
     
-       ``Write programs that do one thing and do it well.''
+    .. epigraph::
+       
+       "Write programs that do one thing and do it well."
        
        -- Doug McIlroy (inventor of UNIX pipes)
+
 
 **Auto-contenuta**
 
@@ -260,3 +261,4 @@ Funzioni
   
   * da usarsi per operazioni di durata imprecisata
 
+.. include:: epilogue.rst

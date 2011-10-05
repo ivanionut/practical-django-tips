@@ -35,5 +35,7 @@ Riferimenti
 * `doctest`_
 * `unittest`_
 * `fixtures`_
-* `Django Test Client`_
-* `Email Capture`_
+* `Django Test Client <https://docs.djangoproject.com/en/1.3/topics/testing/#module-django.test.client>`_
+* `Email Capture <https://docs.djangoproject.com/en/1.3/topics/testing/#django.core.mail.django.core.mail.outbox>`_
+
+.. include:: epilogue.rst

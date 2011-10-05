@@ -14,11 +14,18 @@ Conoscere la persona giusta
 * `Autori di Django
   <https://code.djangoproject.com/browser/django/trunk/AUTHORS>`_
 * Autori di applicazioni oggi incorporate in Django
+* James Bennett
+* Jacob Kaplan Moss
+* Daniel Greenfeld
+* Simon Willison
 
 .. _riferimenti-autorevoli:
 
 Fonti di informazione autorevoli
 ================================
+
+* `Pro Django <http://prodjango.com/>`_
+* `Practical Django Projects <http://www.apress.com/9781590599969>`_
 
 .. _riferimenti-applicazioni:
 
@@ -39,3 +46,5 @@ diverse applicazioni, apparentemente simili.
 
 .. seealso::
    :ref:`applicazioni_utili-index`
+
+.. include:: epilogue.rst
